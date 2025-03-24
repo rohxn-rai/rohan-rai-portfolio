@@ -10,7 +10,7 @@ const Home = () => {
 
           <div>
             <span>Software Developer</span>
-            <h1 className="text-[48px] xl:text-[80px] lg:text-[80px] leading-[1.1] font-semibold">
+            <h1 className="text-[48px] lg:text-[80px] leading-[1.1] font-semibold">
               Hello I'm
               <br />
               <span>Rohan Rai</span>
