@@ -42,7 +42,10 @@ const MobileNav = () => {
               <Link
                 href={link.path}
                 key={index}
-                className={`text-xl capitalize hover:text-purple-500 transition-all`}
+                className={`${
+                  link.path === pathname &&
+                  "text-purple-700 border-b-2 border-purple-700"
+                } text-xl capitalize hover:text-purple-300 transition-all`}
               >
                 {link.name}
               </Link>
