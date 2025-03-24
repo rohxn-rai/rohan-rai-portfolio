@@ -5,6 +5,9 @@ import { usePathname } from "next/navigation";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 
+import { DialogTitle } from "@radix-ui/react-dialog";
+import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
+
 const links = [
   { name: "home", path: "/" },
   { name: "services", path: "/services" },
@@ -21,14 +24,31 @@ const MobileNav = () => {
         <CiMenuFries className="text-[32px] text-purple-700" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
-        <div className="mt-18 mb-24 text-center text-2xl">
+        <div className="mt-20 mb-24 text-center text-2xl">
           <Link href="/">
-            <h1>
+            <h1 className="text-4xl font-semibold">
               Rohan Rai<span className="text-purple-700">.</span>
             </h1>
           </Link>
         </div>
-        <nav></nav>
+
+        <VisuallyHidden>
+          <DialogTitle>Menu</DialogTitle>
+        </VisuallyHidden>
+
+        <nav className="flex flex-col justify-center items-center gap-8">
+          {links.map((link, index) => {
+            return (
+              <Link
+                href={link.path}
+                key={index}
+                className={`text-xl capitalize hover:text-purple-500 transition-all`}
+              >
+                {link.name}
+              </Link>
+            );
+          })}
+        </nav>
       </SheetContent>
     </Sheet>
   );
