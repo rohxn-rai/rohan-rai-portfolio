@@ -24,7 +24,7 @@ const Nav = () => {
             className={`${
               link.path === pathname &&
               "text-purple-700 border-b-2 border-purple-700"
-            } capitalize font-medium hover:text-purple-500 transition-all`}
+            } capitalize font-medium hover:text-purple-300 transition-all`}
           >
             {link.name}
           </Link>
