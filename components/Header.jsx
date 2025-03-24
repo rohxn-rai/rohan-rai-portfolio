@@ -10,11 +10,18 @@ const Header = () => {
         {/* lgoo */}
         <Link href="/">
           <h1 className="text-4xl font-semibold">
-            Rohan Rai<span className="text-purple-500">.</span>
+            Rohan Rai<span className="text-purple-700">.</span>
           </h1>
         </Link>
+
         {/* destop navigation */}
-        <Nav />
+
+        <div className="hidden xl:flex">
+          <Nav />
+          <Link href="/contact">
+            <Button>Hire me</Button>
+          </Link>
+        </div>
       </div>
     </header>
   );
