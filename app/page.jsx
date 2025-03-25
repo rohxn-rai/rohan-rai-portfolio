@@ -25,7 +25,7 @@ const Home = () => {
 
             {/* socials */}
 
-            <div>
+            <div className="flex flex-col lg:flex-row items-center gap-8">
               <Button
                 variant="outline"
                 size="lg"
@@ -35,7 +35,7 @@ const Home = () => {
                 <FiDownload className="text-xl" />
               </Button>
 
-              <div>Socials</div>
+              <div className="mb-8 lg:mb-0">Socials</div>
             </div>
           </div>
 
