@@ -9,8 +9,9 @@ const Home = () => {
           {/* text */}
 
           <div>
-            <span>Software Developer</span>
-            <h1 className="text-[48px] lg:text-[80px] leading-[1.1] font-semibold">
+            <span className="text-xl">Software Developer</span>
+
+            <h1 className="h1">
               Hello I'm
               <br />
               <span>Rohan Rai</span>
