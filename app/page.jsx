@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
 import Social from "@/components/Social";
+import Photo from "@/components/Photo";
 
 const Home = () => {
   return (
@@ -51,7 +52,9 @@ const Home = () => {
 
           {/* photo */}
 
-          <div>photo</div>
+          <div>
+            <Photo />
+          </div>
         </div>
       </div>
     </section>
