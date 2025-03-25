@@ -14,8 +14,29 @@ const Home = () => {
             <h1 className="h1">
               Hello I'm
               <br />
-              <span>Rohan Rai</span>
+              <span className="text-purple-700">Rohan Rai</span>
             </h1>
+
+            <p className="max-w-[500px] mb-9 text-white/80">
+              I'm a Software Developer based in India. I have a passion for web
+              development and Machine Learning, and I love to explore and create
+              new things.
+            </p>
+
+            {/* socials */}
+
+            <div>
+              <Button
+                variant="outline"
+                size="lg"
+                className="uppercase flex items-center gap-2"
+              >
+                <span>Download CV</span>
+                <FiDownload className="text-xl" />
+              </Button>
+
+              <div>Socials</div>
+            </div>
           </div>
 
           {/* photo */}
