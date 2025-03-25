@@ -22,7 +22,7 @@ const Photo = () => {
           className="w-[298px] h-[298px] lg:h-[498px] lg:w-[498px] mix-blend-lighten"
         >
           <Image
-            src="/assets/photo.png"
+            src="https://res.cloudinary.com/dy3pcsuui/image/upload/v1742902154/82518521759_an3zrx.png"
             priority
             quality={100}
             fill
