@@ -8,13 +8,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { DialogTitle } from "@radix-ui/react-dialog";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
-const links = [
-  { name: "home", path: "/" },
-  { name: "services", path: "/services" },
-  { name: "resume", path: "/resume" },
-  { name: "work", path: "/work" },
-  { name: "contact", path: "/contact" },
-];
+import { links } from "@/data/navLinks";
 
 const MobileNav = () => {
   const pathname = usePathname();
