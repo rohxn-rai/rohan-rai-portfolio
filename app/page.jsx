@@ -20,9 +20,9 @@ const Home = () => {
             </h1>
 
             <p className="max-w-[500px] mb-9 text-white/80">
-              I'm a Software Developer based in India. I have a passion for web
-              development and Machine Learning, and I love to explore and create
-              new things.
+              I'm a Software Developer based in India. I have a passion for Web
+              Development and Machine Learning, and I love to explore, learn and
+              create new things.
             </p>
 
             {/* socials */}
@@ -38,7 +38,13 @@ const Home = () => {
               </Button>
 
               <div className="mb-8 lg:mb-0">
-                <Social />
+                <Social
+                  containerStyles="flex gap-6"
+                  iconStyles={`w-9 h-9 border border-purple-700
+                    rounded-full flex justify-center items-center
+                    text-purple-700 text-base hover:bg-purple-700
+                    hover:text-primary hover:transition-all duration-500`}
+                />
               </div>
             </div>
           </div>
