@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -8,8 +9,8 @@ import Stats from "@/components/Stats";
 const Home = () => {
   return (
     <section className="h-full">
-      <div className="container xl:mx-auto xl:mx-auto px-5 h-full">
-        <div className="flex flex-col xl:flex-row xl:flex-row items-center justify-between xl:pt-8 xl:pb-24 xl:pt-8 xl:pb-24">
+      <div className="container xl:mx-auto px-5 h-full">
+        <div className="flex flex-col xl:flex-row  items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
 
           <div className="text-center xl:text-left order-2 xl:order-none">
@@ -30,14 +31,19 @@ const Home = () => {
             {/* socials */}
 
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="xl"
-                className="uppercase flex items-center gap-2"
+              <a
+                href="/resume/Resume_Rohan_Rai.pdf"
+                download="Resume_Rohan_Rai.pdf"
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </Button>
+                <Button
+                  variant="outline"
+                  size="xl"
+                  className="uppercase flex items-center gap-2"
+                >
+                  <span>Download CV</span>
+                  <FiDownload className="text-xl" />
+                </Button>
+              </a>
 
               <div className="mb-8 xl:mb-0">
                 <Social
