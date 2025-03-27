@@ -49,13 +49,33 @@ const Services = () => {
               >
                 {/* top */}
                 <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold">{service.num}</div>
-                  <Link href={service.href}>
-                    <BsArrowDownRight />
+                  <div
+                    className={`text-5xl font-extrabold text-transparent
+                    [-webkit-text-stroke:1px_#fff] 
+                    group-hover:[-webkit-text-stroke:1px_#7e22ce]
+                    transition-all duration-500`}
+                  >
+                    {service.num}
+                  </div>
+                  <Link
+                    href={service.href}
+                    className={`w-[70px] h-[70px] rounded-full
+                    bg-white group-hover:bg-purple-700 transition-all duration-500
+                    flex justify-center items-center hover:-rotate-45`}
+                  >
+                    <BsArrowDownRight className="text-primary text-3xl group" />
                   </Link>
                 </div>
-                <h2>{service.title}</h2>
-                <p>{service.description}</p>
+
+                {/* bottom */}
+
+                <h2
+                  className={`text-[42px] font-bold leading-none text-white
+                  group-hover:text-purple-700 transition-all duration-500`}
+                >
+                  {service.title}
+                </h2>
+                <p className="text-white/60">{service.description}</p>
                 <div className="border-b border-white/20 w-full"></div>
               </div>
             );
