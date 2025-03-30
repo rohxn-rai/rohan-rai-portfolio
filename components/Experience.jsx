@@ -15,16 +15,19 @@ const experience = {
       company: "Digi-Safari LLC",
       position: "MERN Stack Developer",
       duration: "Dec 2024 - Present",
+      location: "Thane, Maharashtra",
     },
     {
       company: "AI LifeBOT",
       position: "Data Science Intern",
       duration: "Apr 2024 - Jul 2024",
+      location: "Noida, Uttar Pradesh",
     },
     {
       company: "RadicalX",
       position: "AI Engineer Intern",
       duration: "Nov 2023 - Feb 2024",
+      location: "Remote",
     },
   ],
 };
@@ -43,15 +46,15 @@ const Experience = () => {
               return (
                 <li
                   key={index}
-                  className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                  className="bg-[#232329] h-[250px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                 >
                   <span className="text-purple-700">{item.duration}</span>
-                  <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                  <h3 className="text-xl min-w-[260px] min-h-[60px] text-center lg:text-left">
                     {item.position}
                   </h3>
-                  <div className="flex items-center gap-3">
-                    <span className="w-[6px] h-[6px] rounded-full bg-purple-700"></span>
-                    <p className="text-white/60">{item.company}</p>
+                  <div className="flex flex-col items-start gap-3 align-text-bottom min-h-[60px]">
+                    <p className="text-white/80">{item.company}</p>
+                    <p className="text-white/50">{item.location}</p>
                   </div>
                 </li>
               );
