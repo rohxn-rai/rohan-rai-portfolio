@@ -12,7 +12,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Rohan Rai",
+  title: "Rohan Rai - Software Developer",
   description: "My portfolio website.",
 };
 
