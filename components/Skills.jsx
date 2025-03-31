@@ -99,7 +99,7 @@ const Skills = () => {
             {skills.description}
           </p>
         </div>
-        <ScrollArea className="h-[650px]">
+        <ScrollArea className="h-[600px]">
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
             {skills.skillset.map((skill, index) => {
               return (
