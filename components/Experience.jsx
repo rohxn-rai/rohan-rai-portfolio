@@ -40,7 +40,7 @@ const Experience = () => {
         <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
           {experience.description}
         </p>
-        <ScrollArea className="h-[400px]">
+        <ScrollArea className="h-[650px]">
           <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
             {experience.items.map((item, index) => {
               return (
