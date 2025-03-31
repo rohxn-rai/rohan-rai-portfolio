@@ -18,6 +18,13 @@ import { GrMysql } from "react-icons/gr";
 
 import { TabsContent } from "./ui/tabs";
 
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 // skills data
@@ -52,12 +59,12 @@ const skills = {
       name: "ReactJS",
     },
     {
-      icon: <FaNodeJs />,
-      name: "NodeJS",
-    },
-    {
       icon: <SiNextdotjs />,
       name: "NEXTJS",
+    },
+    {
+      icon: <FaNodeJs />,
+      name: "NodeJS",
     },
     {
       icon: <SiScikitlearn />,
@@ -92,9 +99,24 @@ const Skills = () => {
             {skills.description}
           </p>
         </div>
-        <ul>
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
           {skills.skillset.map((skill, index) => {
-            return <li key={index}>{skill.name}</li>;
+            return (
+              <li key={index}>
+                <TooltipProvider delayDuration={100}>
+                  <Tooltip>
+                    <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                      <div className="text-6xl group-hover:text-purple-700 transition-all duration-300">
+                        {skill.icon}
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </li>
+            );
           })}
         </ul>
       </div>
