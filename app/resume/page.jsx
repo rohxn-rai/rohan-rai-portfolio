@@ -15,7 +15,7 @@ const Resume = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 1.5, duration: 0.25, ease: "easeIn" },
+        transition: { delay: 0.75, duration: 0.25, ease: "easeIn" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
@@ -24,11 +24,19 @@ const Resume = () => {
           defaultValue="experience"
           className="flex flex-col xl:flex-row gap-[60px]"
         >
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About Me</TabsTrigger>
+          <TabsList className="flex flex-row xl:flex-col w-full xl:max-w-[380px] my-auto xl:mx-0 gap-6 justify-around">
+            <TabsTrigger className="xl:py-20" value="experience">
+              Experience
+            </TabsTrigger>
+            <TabsTrigger className="xl:py-20" value="education">
+              Education
+            </TabsTrigger>
+            <TabsTrigger className="xl:py-20" value="skills">
+              Skills
+            </TabsTrigger>
+            <TabsTrigger className="xl:py-20" value="about">
+              About Me
+            </TabsTrigger>
           </TabsList>
 
           {/* content */}

@@ -95,11 +95,11 @@ const Skills = () => {
       <div className="flex flex-col gap-[30px]">
         <div className="flex flex-col gap-[30px] text-center xl:text-left">
           <h3 className="text-4xl font-bold">{skills.title}</h3>
-          <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+          <p className="w-full max-w-[1200px] text-white/60 mx-auto xl:mx-0">
             {skills.description}
           </p>
         </div>
-        <ScrollArea className="h-[650px]">
+        <ScrollArea className="h-[600px]">
           <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
             {skills.skillset.map((skill, index) => {
               return (
