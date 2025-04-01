@@ -65,6 +65,20 @@ const Contact = () => {
                 <Input type="email" placeholder="Email Address" />
                 <Input type="phone" placeholder="Phone Number" />
               </div>
+
+              <Select>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select a Service" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    <SelectLabel>Select a Service</SelectLabel>
+                    <SelectItem value="webdev">Web Development</SelectItem>
+                    <SelectItem value="dsnml">Data Science</SelectItem>
+                    <SelectItem value="design">UI/UX Design</SelectItem>
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
             </form>
           </div>
 
