@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
+import { TextArea } from "@/components/ui/textarea";
 
 import {
   Select,
@@ -79,6 +79,13 @@ const Contact = () => {
                   </SelectGroup>
                 </SelectContent>
               </Select>
+
+              {/* textarea */}
+
+              <TextArea
+                className="h-[200px]"
+                placeholder="Type your message here."
+              />
             </form>
           </div>
 
