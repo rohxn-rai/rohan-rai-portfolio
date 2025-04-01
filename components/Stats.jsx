@@ -25,7 +25,7 @@ const Stats = () => {
   return (
     <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
       <div className="container mx-auto px-5">
-        <div className="flex flex-wrap gap-6 max-w-[75vw] mx-auto xl:max-w-none">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-[75vw] mx-auto xl:max-w-none">
           {stats.map((item, index) => {
             return (
               <div
@@ -34,8 +34,8 @@ const Stats = () => {
               >
                 <CountUp
                   end={item.num}
-                  duration={5}
-                  delay={1.5}
+                  duration={2}
+                  delay={0.5}
                   className="text-4xl xl:text-6xl font-extrabold"
                 />
                 <p
