@@ -89,13 +89,16 @@ const Contact = () => {
 
               {/* button */}
 
-              <Button size="md" className="max-w-40">
-                Send message
-              </Button>
+              <div className="text-right">
+                <Button size="md" className="max-w-40">
+                  Send message
+                </Button>
+              </div>
             </form>
           </div>
 
           {/* info */}
+
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             info
           </div>
