@@ -21,7 +21,7 @@ import {
 const projects = [
   {
     num: "01",
-    category: "Machine Learning",
+    category: "ML",
     title: "Reflair - Reddit Flair Prediction",
     description:
       "This is a Project for prediction of flairs in each subreddit submissions. It used PRAW and the Reddit API to fetch data from reddit and then passes the data to the Model for prediction.",
@@ -38,7 +38,7 @@ const projects = [
   },
   {
     num: "02",
-    category: "Machine Learning",
+    category: "ML",
     title: "Reflair - Reddit Flair Prediction",
     description:
       "This is a Project weather focast prediction. This project is able to predict the weather forcast of the next 7 days with an accuracy of 98% and the next 14 days with am accuracy of 94%.",
@@ -54,7 +54,7 @@ const projects = [
   },
   {
     num: "03",
-    category: "Machine Learning",
+    category: "ML",
     title: "Reflair - Reddit Flair Prediction",
     description:
       "This is a Project weather focast prediction. This project is able to predict the weather forcast of the next 7 days with an accuracy of 98% and the next 14 days with am accuracy of 94%.",
@@ -90,7 +90,7 @@ const Work = () => {
     >
       <div className="container mx-auto px-5">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+          <div className="w-full xl:w-[45%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
             <div className="flex flex-col gap-[30px] h-[50%]">
               {/* outline Num */}
 
@@ -160,7 +160,7 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-[50%]">
+          <div className="w-full xl:w-[55%]">
             <Swiper
               loop={true}
               spaceBetween={30}
@@ -171,7 +171,7 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-purple-50/20">
+                    <div className="h-[360px] md:h-[554] xl:h-[460px] relative group flex justify-center items-center bg-purple-50/20">
                       {/* overlay */}
 
                       <div></div>
