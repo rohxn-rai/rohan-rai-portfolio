@@ -1,3 +1,7 @@
+# Personal Portfolio
+
+This is my personal portfolio made using NextJS, ReactJS, Tailwind CSS and ShadCn components. This is just a Front-End of my Portfolio and I will be working on the Back-End of my Portfolio next. Till then I am open to suggestion and idea for any thing I may/may not be doing wrong.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
