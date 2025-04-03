@@ -48,10 +48,7 @@ const Home = () => {
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
-                  iconStyles={`w-9 h-9 border border-purple-700
-                    rounded-full flex justify-center items-center
-                    text-purple-700 text-base hover:bg-purple-700
-                    hover:text-primary hover:transition-all duration-500`}
+                  iconStyles="w-[56px] h-[56px] border border-purple-700 rounded-full flex justify-center items-center text-purple-700 text-base hover:bg-purple-700 hover:text-primary hover:transition-all duration-500 text-[25px]"
                 />
               </div>
             </div>
