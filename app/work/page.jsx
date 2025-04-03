@@ -40,7 +40,7 @@ const projects = [
   {
     num: "02",
     category: "ML",
-    title: "Reflair - Reddit Flair Prediction",
+    title: "Weather Focasting",
     description:
       "This is a Project weather focast prediction. This project is able to predict the weather forcast of the next 7 days with an accuracy of 98% and the next 14 days with am accuracy of 94%.",
     stack: [
@@ -57,7 +57,7 @@ const projects = [
   {
     num: "03",
     category: "ML",
-    title: "Reflair - Reddit Flair Prediction",
+    title: "Weather Focasting",
     description:
       "This is a Project weather focast prediction. This project is able to predict the weather forcast of the next 7 days with an accuracy of 98% and the next 14 days with am accuracy of 94%.",
     stack: [
