@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+
+import { Button } from "@/components/ui/button";
 
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
@@ -7,8 +8,8 @@ import Stats from "@/components/Stats";
 
 const Home = () => {
   return (
-    <section className="h-full">
-      <div className="container xl:mx-auto px-5 h-full">
+    <section className="h-full py-6">
+      <div className="container mx-auto px-5 h-full">
         <div className="flex flex-col xl:flex-row  items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
 
@@ -47,10 +48,7 @@ const Home = () => {
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
-                  iconStyles={`w-9 h-9 border border-purple-700
-                    rounded-full flex justify-center items-center
-                    text-purple-700 text-base hover:bg-purple-700
-                    hover:text-primary hover:transition-all duration-500`}
+                  iconStyles="w-[56px] h-[56px] border border-purple-700 rounded-full flex justify-center items-center text-purple-700 text-base hover:bg-purple-700 hover:text-primary hover:transition-all duration-500 text-[25px]"
                 />
               </div>
             </div>

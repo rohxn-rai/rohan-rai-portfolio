@@ -7,7 +7,7 @@ import MobileNav from "@/components/MobileNav";
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 text-white">
-      <div className="container xl:mx-auto px-5 flex justify-between items-center">
+      <div className="container mx-auto px-5 flex justify-between items-center">
         {/* lgoo */}
 
         <Link href="/">

@@ -18,12 +18,12 @@ const Photo = () => {
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 0.75, duration: 0.25, ease: "easeInOut" },
+            transition: { delay: 1, duration: 0.25, ease: "easeInOut" },
           }}
           className="w-[298px] h-[298px] xl:h-[498px] xl:w-[498px] mix-blend-lighten absolute"
         >
           <Image
-            src="https://res.cloudinary.com/dy3pcsuui/image/upload/v1742902154/82518521759_an3zrx.png"
+            src="https://res.cloudinary.com/dy3pcsuui/image/upload/v1743681414/pfp_fesb6k.png"
             priority
             quality={100}
             fill
