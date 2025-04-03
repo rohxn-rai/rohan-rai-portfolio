@@ -91,43 +91,50 @@ const Work = () => {
       <div className="container mx-auto px-5">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
           <div className="w-full xl:w-[45%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
-            <div className="flex flex-col gap-[30px] h-[50%]">
-              {/* outline Num */}
+            <div className="flex flex-col h-[50%]">
+              <div className="flex flex-col gap-[30px] group">
+                {/* outline Num */}
 
-              <div className="text-8xl leading-none font-extrabold text-transparent [-webkit-text-stroke:1px_#fff] group-hover:[-webkit-text-stroke:1px_#7e22ce] transition-all duration-500">
-                {project.num}
+                <div className="text-6xl leading-none font-extrabold text-transparent [-webkit-text-stroke:1px_#fff]">
+                  {project.num}
+                </div>
+
+                {/* project category */}
+
+                <h2 className="text-4xl font-bold leading-none text-white group-hover:text-purple-700 transition-all duration-500 capitalize">
+                  {project.category} project
+                </h2>
+
+                {/* project title */}
+
+                <h3 className="text-3xl leading-none text-white capitalize">
+                  {project.title}
+                </h3>
+
+                {/* project description */}
+
+                <p className="text-white/60">{project.description}</p>
+
+                {/* stack */}
+
+                <ul className="flex gap-4">
+                  {project.stack.map((item, index) => {
+                    return (
+                      <li key={index} className="text-xl text-purple-700">
+                        {item.name}
+                        {index !== project.stack.length - 1 && ","}
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
-
-              {/* project category */}
-
-              <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-purple-700 transition-all duration-500 capitalize">
-                {project.category} project
-              </h2>
-
-              {/* project description */}
-
-              <p className="text-white/60">{project.description}</p>
-
-              {/* stack */}
-
-              <ul className="flex gap-4">
-                {project.stack.map((item, index) => {
-                  return (
-                    <li key={index} className="text-xl text-purple-700">
-                      {item.name}
-                      {index !== project.stack.length - 1 && ","}
-                    </li>
-                  );
-                })}
-              </ul>
-
               {/* border */}
 
               <div className="border border-white/20" />
 
-              {/* button */}
+              {/* buttons */}
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 pt-6">
                 {/* live project */}
 
                 <Link href={project.live}>
