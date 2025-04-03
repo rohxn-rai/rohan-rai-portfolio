@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+
+import { Button } from "@/components/ui/button";
 
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
@@ -7,7 +8,7 @@ import Stats from "@/components/Stats";
 
 const Home = () => {
   return (
-    <section className="h-full">
+    <section className="h-full py-6">
       <div className="container mx-auto px-5 h-full">
         <div className="flex flex-col xl:flex-row  items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
