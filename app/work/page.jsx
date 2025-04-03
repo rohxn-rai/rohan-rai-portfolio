@@ -32,7 +32,8 @@ const projects = [
       { name: "DS" },
       { name: "ML" },
     ],
-    image: "/work/Reflair/test1.jpg",
+    image:
+      "https://res.cloudinary.com/dy3pcsuui/image/upload/v1743682212/Empty_yttfcg.png",
     live: "",
     github: "",
   },
@@ -48,7 +49,8 @@ const projects = [
       { name: "ReactJS" },
       { name: "MongoDB" },
     ],
-    image: "/work/Reflair/test2.jpg",
+    image:
+      "https://res.cloudinary.com/dy3pcsuui/image/upload/v1743682212/Empty_yttfcg.png",
     live: "",
     github: "",
   },
@@ -64,7 +66,8 @@ const projects = [
       { name: "ReactJS" },
       { name: "MongoDB" },
     ],
-    image: "/work/Reflair/test3.jpg",
+    image:
+      "https://res.cloudinary.com/dy3pcsuui/image/upload/v1743682212/Empty_yttfcg.png",
     live: "",
     github: "",
   },
